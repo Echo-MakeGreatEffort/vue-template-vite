@@ -10,8 +10,7 @@
     "eslint:fix": "npx eslint --fix --ext \".js,.html\"",
     "commit": "npx git-cz",
     "lint:commit": "yarn lint && yarn commit",
-    "postinstall": "npx husky init",
-    "prepare": "husky"
+    "postinstall": "husky"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
