@@ -1,7 +1,12 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
-  plugins: [],
+  extends: ['stylelint-config-standard-scss'],
   rules: {
-    'string-quotes': 'double'
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['tailwind']
+      }
+    ]
   }
 };
